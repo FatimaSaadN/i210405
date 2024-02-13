@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4F8F8">
+    <ImageView
+        android:id="@+id/imageHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/header" />
+
+    <View
+        android:id="@+id/grey"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/grey_rectangle" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageHeader"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/topbar" />
+
+    <TextView
+        android:id="@+id/id1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grey"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:text="Portrait"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/id2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grey"
+        android:layout_toRightOf="@id/id1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:text="Slow-mo"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/id3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grey"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Video"
+        android:textColor="#519CA3"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+
+    <View
+        android:layout_width="60dp"
+        android:layout_height="22dp"
+        android:layout_below="@id/grey"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/camera_rect" />
+
+    <TextView
+        android:id="@+id/id4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grey"
+        android:layout_toRightOf="@id/id3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:text="Photo"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/id5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grey"
+        android:layout_toRightOf="@id/id4"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:text="Square"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <View
+        android:id="@+id/id7"
+        android:layout_width="82dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/id3"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/camera_button" />
+
+
+
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/id1"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@id/id7"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/camera" />
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/id1"
+        android:layout_marginRight="50dp"
+        android:layout_toLeftOf="@id/id7"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/gallery" />
+
+
+</RelativeLayout>
+
